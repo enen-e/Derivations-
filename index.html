@@ -1,0 +1,78 @@
+<head>
+<title>enen</title></head>
+<body>
+<nav>
+<a href="./index.html">home</a>
+<a href="./g at depth.html">g at depth</a>
+<a href="./periodofpendulam.html">pemdulam</a>
+<a href="./Horizontal range.html">projectile</a>
+</nav>
+<style type="text/css">
+#text{background-color:yellow;
+
+}
+#tex{background-color:red;
+}
+</style>
+<div><h2>enen</h2></div>
+<div><h4>engagement,entertainment</h4></div>
+<div class="grid">	  
+	  <div >
+		  <input size="2" class="leftnormal"type="text"id="text"><br>
+	  <input size="2" class="leftnormal"type="text"id="text"><br>
+	  <input size="2" class="leftnormal"type="text"id="text"><br>
+	  <input size="2" class="leftnormal"type="text"id="text">
+	  
+	  <button onclick="changeid()">cid</button>
+	  <button onclick="changeidback()">cid</button>
+	  
+	  </div>
+	  <div style="position:relative;">=
+		  <input size="9"class="rightnormal"type="text">	  
+	  <div style="position:absolute;left:1em" >
+	  <span 
+	  class="input" 
+	  role="textbox" 
+	  STYLE="text-decoration:overline"
+	  contenteditable>
+	  &ensp;&ensp;&ensp;&ensp;&ensp;
+	  </span>
+	  </div>
+	  </div>
+</div>
+<input  type="textarea"  id="tex">
+<div id="keyboard">
+	<input class="switch" type="button" value="+">
+	<input class="switch" type="button" value="-">
+	</div>
+	<script type="text/javascript">
+	function changeid(){
+	var x= document.getElementById('text').id='tex';}
+	function changeidback(){
+	document.getElementById('tex').id='text';}
+	
+	(function() {
+	'use strict';
+	var i,c;
+	function init(){ 
+	i=document.getElementById('keyboard').getElementsByTagName('input');
+	for(c=0;c<i.length;c++) {
+	if(i[c].type==='button') {
+	i[c].addEventListener('onclick',makeClickHandler(c));
+	}
+	}
+	
+	
+	}
+	
+	function makeClickHandler(c) {
+	i[c].onclick=function() {
+	document.getElementById('text').value+=this.value.toLowerCase();
+	};
+	}
+	
+	window.addEventListener?
+	window.addEventListener('load',init,false):
+	window.attachEvent('onload',init);
+	})();
+	</script></script>
